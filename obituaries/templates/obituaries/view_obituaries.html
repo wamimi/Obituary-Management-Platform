@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Obituaries</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
     <h1>Obituaries</h1>
@@ -22,6 +24,10 @@
             <td>{{ obituary.date_of_death }}</td>
             <td>{{ obituary.content }}</td>
             <td>{{ obituary.author }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="5">No obituaries available.</td>
         </tr>
         {% endfor %}
     </table>
