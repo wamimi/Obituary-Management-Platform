@@ -2,21 +2,25 @@ body {
     font-family: Arial, sans-serif;
     background: url('../images/image.webp') no-repeat center center fixed;
     background-size: cover;
-    color: #333;
+    color: #9e1414;
 }
 
 h1 {
     text-align: center;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 form {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 form label {
@@ -34,10 +38,11 @@ form input, form textarea, form button {
 }
 
 form button {
-    background: #28a745;
+    background: #0f0e0e;
     color: #fff;
     border: none;
     cursor: pointer;
+    font-size: 16px;
 }
 
 form button:hover {
@@ -48,10 +53,10 @@ table {
     width: 90%;
     margin: 50px auto;
     border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 table, th, td {
