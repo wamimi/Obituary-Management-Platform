@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from .models import Obituary
 from django.utils.text import slugify
@@ -39,3 +39,12 @@ def submit_obituary(request):
 def view_obituaries(request):
     obituaries = Obituary.objects.all()
     return render(request, 'obituaries/view_obituaries.html', {'obituaries': obituaries})
+
+def obituary_detail(request, id):
+    obituary = get_object_or_404(Obituary, id=id)
+    meta_tags = {
+        'title': obituary.name,
+        'description': obituary.content[:160],  # Take the first 160 characters as description
+        'keywords': f"{obituary.name}, obituary, {obituary.author}"
+    }
+    return render(request, 'obituaries/obituary_detail.html', {'obituary': obituary, 'meta_tags': meta_tags})

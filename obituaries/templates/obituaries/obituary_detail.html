@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ meta_tags.title }}</title>
+    <meta name="description" content="{{ meta_tags.description }}">
+    <meta name="keywords" content="{{ meta_tags.keywords }}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>{{ obituary.name }}</h1>
+        <p>{{ obituary.date_of_birth }} - {{ obituary.date_of_death }}</p>
+    </header>
+    <section>
+        <p>{{ obituary.content }}</p>
+    </section>
+    <footer>
+        <p>Published by {{ obituary.author }}</p>
+    </footer>
+</body>
+</html>

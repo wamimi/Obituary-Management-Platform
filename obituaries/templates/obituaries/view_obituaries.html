@@ -19,10 +19,10 @@
         </tr>
         {% for obituary in obituaries %}
         <tr>
-            <td>{{ obituary.name }}</td>
+            <td><a href="{% url 'obituary_detail' obituary.id %}">{{ obituary.name }}</a></td>
             <td>{{ obituary.date_of_birth|date:"F j, Y" }}</td>
             <td>{{ obituary.date_of_death|date:"F j, Y" }}</td>
-            <td>{{ obituary.content }}</td>
+            <td>{{ obituary.content|truncatewords:10 }}</td>
             <td>{{ obituary.author }}</td>
         </tr>
         {% endfor %}
