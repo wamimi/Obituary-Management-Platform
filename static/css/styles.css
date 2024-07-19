@@ -86,3 +86,29 @@ tr:nth-child(even) {
 body, form, table {
     animation: fadeIn 1s ease-in;
 }
+.social-sharing {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-sharing h3 {
+    margin-bottom: 10px;
+}
+
+.social-sharing a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-sharing img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-sharing img:hover {
+    transform: scale(1.1);
+}
+
