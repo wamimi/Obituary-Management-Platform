@@ -1,6 +1,11 @@
 # Obituary Management Platform
 
 The Obituary Management Platform is a web application that allows users to submit, manage, and display obituaries. The platform is built using Django and includes features for SEO and Social Media Optimization to enhance visibility and engagement.
+![Submitting the obituary](image.png)
+
+![a list of the obituaries](image-1.png)
+
+![An example of an obituary](image-2.png)
 
 ## Features
 
